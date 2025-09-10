@@ -1,4 +1,4 @@
-import { bucket } from "../firebase.js";
+//import { bucket } from "../firebase.js";
 import { Readable } from "stream";
 import { v2 as cloudinary } from "cloudinary";
 
@@ -9,7 +9,7 @@ cloudinary.config({
   api_secret: process.env.CLOUDINARY_API_SECRET,
 });
 
-export const getImageUrl1 = async ({ buffer, originalname, mimetype }) => {
+/*export const getImageUrl1 = async ({ buffer, originalname, mimetype }) => {
   console.log("Uploading file to Firebase Storage...");
   const fileName = `${Date.now()}-${originalname}`;
   const file = bucket.file(fileName);
@@ -34,7 +34,7 @@ export const getImageUrl1 = async ({ buffer, originalname, mimetype }) => {
   console.log("file name:", fileName);
 
   return `https://storage.googleapis.com/${bucket.name}/${fileName}`;
-};
+};*/
 
 export const getImageUrl = async (fileBuffer) => {
   return new Promise((resolve, reject) => {
