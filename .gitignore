@@ -1,0 +1,32 @@
+# Node.js dependencies
+node_modules/
+npm-debug.log
+yarn-debug.log*
+yarn-error.log*
+# Chat-App/node_modules/
+
+# Expo
+.expo/
+.expo-shared/
+
+# React Native
+ios/Pods/
+*.xcodeproj/
+*.xcworkspace/
+*.xcuserstate
+android/.gradle/
+android/app/build/
+android/build/
+
+# Environment files
+.env
+.env.local
+
+# Logs
+*.log
+logs/
+debug.log
+error.log
+
+# VSCode
+.vscode/
